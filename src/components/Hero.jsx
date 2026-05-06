@@ -26,7 +26,7 @@ function Hero() {
       </h1>
       <p className="mb-5">
         Create professional, ATS-friendly resumes instantly using AI. 
-        Just enter your details and get a clean, job-ready resume in seconds.
+        Just enter your details and get a clean, job-ready resume in seconds
       </p>
       <button className="btn btn-primary">Create Resume</button>
     </div>
