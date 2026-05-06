@@ -25,9 +25,7 @@ function Hero() {
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">
-        Build Your Resume with AI 
-      </h1>
-      <span>
+       <span>
   Build Your Resume with
   <span className="text-rotate">
     <span>
@@ -37,6 +35,8 @@ function Hero() {
     </span>
   </span>
 </span>
+      </h1>
+      
       <p className="mb-5">
         Create professional, ATS-friendly resumes instantly using AI. 
         Just enter your details and get a clean, job-ready resume in seconds
