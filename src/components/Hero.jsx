@@ -27,6 +27,16 @@ function Hero() {
       <h1 className="mb-5 text-5xl font-bold">
         Build Your Resume with AI 
       </h1>
+      <span>
+  Build Your Resume with
+  <span className="text-rotate">
+    <span>
+      <span className="bg-teal-400 text-teal-800 px-2">AI</span>
+      <span className="bg-red-400 text-red-800 px-2">RESUMIFY</span>
+      {/* <span className="bg-blue-400 text-blue-800 px-2">Managers</span> */}
+    </span>
+  </span>
+</span>
       <p className="mb-5">
         Create professional, ATS-friendly resumes instantly using AI. 
         Just enter your details and get a clean, job-ready resume in seconds
