@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Hero() {
+
+  const Navigate = useNavigate();
   return (
    <div className="hero min-h-screen relative overflow-hidden">
 
@@ -28,7 +31,7 @@ function Hero() {
         Create professional, ATS-friendly resumes instantly using AI. 
         Just enter your details and get a clean, job-ready resume in seconds
       </p>
-      <button className="btn btn-primary">Create Resume</button>
+      <button onClick={ () => Navigate('/resume')} className="btn btn-primary">Create Resume</button>
     </div>
   </div>
 </div>
