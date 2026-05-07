@@ -21,7 +21,7 @@ const ResumeForm = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:3000/api",
+        "http://localhost:3000/api/generate-resume",
         formData
       );
       setResume(res.data.resume);
@@ -33,17 +33,36 @@ const ResumeForm = () => {
   };
 
   return (
-    <div id="form" className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8">
+    <div id="form" className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 mt-20">
 
       {/* FORM */}
-      <div className="card bg-base-100 shadow-xl p-6 space-y-4">
+      <div className="card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 space-y-4 text-white">
         <h2 className="text-2xl font-bold">Enter Details</h2>
 
-        <input name="name" placeholder="Name" className="input input-bordered" onChange={handleChange} />
-        <input name="education" placeholder="Education" className="input input-bordered" onChange={handleChange} />
-        <input name="experience" placeholder="Experience" className="input input-bordered" onChange={handleChange} />
-        <input name="skills" placeholder="Skills" className="input input-bordered" onChange={handleChange} />
-        <input name="projects" placeholder="Projects" className="input input-bordered" onChange={handleChange} />
+        <input name="name" placeholder="Name"
+          className="input input-bordered bg-white/10 border-white/20 text-white placeholder-gray-300"
+          onChange={handleChange}
+        />
+
+        <input name="education" placeholder="Education"
+          className="input input-bordered bg-white/10 border-white/20 text-white placeholder-gray-300"
+          onChange={handleChange}
+        />
+
+        <input name="experience" placeholder="Experience"
+          className="input input-bordered bg-white/10 border-white/20 text-white placeholder-gray-300"
+          onChange={handleChange}
+        />
+
+        <input name="skills" placeholder="Skills"
+          className="input input-bordered bg-white/10 border-white/20 text-white placeholder-gray-300"
+          onChange={handleChange}
+        />
+
+        <input name="projects" placeholder="Projects"
+          className="input input-bordered bg-white/10 border-white/20 text-white placeholder-gray-300"
+          onChange={handleChange}
+        />
 
         <button onClick={handleSubmit} className="btn btn-primary">
           {loading ? "Generating..." : "Generate Resume"}
@@ -51,7 +70,7 @@ const ResumeForm = () => {
       </div>
 
       {/* OUTPUT */}
-      <div className="card bg-base-200 shadow-xl p-6">
+      <div className="card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 text-white">
         <h2 className="text-xl font-bold mb-4">Generated Resume</h2>
 
         <div className="whitespace-pre-wrap text-sm max-h-[500px] overflow-y-auto">
