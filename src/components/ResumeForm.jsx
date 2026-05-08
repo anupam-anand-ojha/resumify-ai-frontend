@@ -33,9 +33,8 @@ const ResumeForm = () => {
   };
 
   return (
-  <div id="form" className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 mt-20 relative overflow-hidden">
-
-    {/* Video Background */}
+    <div className="  relative min-h-screen w-full overflow-hidden">
+      {/* Video Background */}
     <video
       autoPlay
       loop
@@ -45,7 +44,8 @@ const ResumeForm = () => {
     >
       <source src="/video.mp4" type="video/mp4" />
     </video>
-
+    <div className="absolute inset-0 bg-black/50 z-0"></div>
+    <div id="form" className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 mt-20 relative overflow-hidden">
     {/* FORM */}
     <div className="relative z-10 card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 space-y-4 text-white">
       <h2 className="text-2xl font-bold">Enter Details</h2>
@@ -88,6 +88,8 @@ const ResumeForm = () => {
         {resume || "Your AI-generated resume will appear here..."}
       </div>
     </div>
+  </div>
+
   </div>
 
   );

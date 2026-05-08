@@ -20,6 +20,8 @@ function Hero() {
 
   </video>
 
+   <div className="absolute inset-0 bg-black/40 z-0"></div>
+
   <div className="hero-overlay"></div>
 
   <div className="hero-content text-neutral-content text-center">
