@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import html2pdf from "html2pdf.js";
 
 const ResumeForm = () => {
   const [formData, setFormData] = useState({
@@ -31,6 +32,22 @@ const ResumeForm = () => {
       setLoading(false);
     }
   };
+  
+// download pdf
+
+const handleDownload = () => {
+  const element = document.getElementById("resume-content");
+
+  const opt = {
+    margin: 0.5,
+    filename: "resume.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+  };
+
+  html2pdf().set(opt).from(element).save();
+};
 
   return (
     <div className="  relative min-h-screen w-full overflow-hidden">
@@ -83,10 +100,12 @@ const ResumeForm = () => {
     {/* OUTPUT */}
     <div className="relative z-10 card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 text-white">
       <h2 className="text-xl font-bold mb-4">Generated Resume</h2>
+      
 
-      <div className="whitespace-pre-wrap text-sm max-h-[500px] overflow-y-auto">
+      <div  id="resume-content" className="whitespace-pre-wrap text-sm max-h-[500px] overflow-y-auto">
         {resume || "Your AI-generated resume will appear here..."}
       </div>
+      <button onClick={handleDownload} className="btn btn-success mb-4">Download PDF</button>
     </div>
   </div>
 
