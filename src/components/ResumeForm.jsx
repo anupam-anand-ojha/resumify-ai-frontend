@@ -105,7 +105,29 @@ const handleDownload = () => {
       <div  id="resume-content" className="whitespace-pre-wrap text-sm max-h-[500px] overflow-y-auto">
         {resume || "Your AI-generated resume will appear here..."}
       </div>
-      <button onClick={handleDownload} className="btn btn-success mb-4">Download PDF</button>
+      <button
+  className="btn"
+  onClick={() =>{handleDownload(); document.getElementById('my_modal_5').showModal()}}
+>
+  Download PDF
+</button>
+
+<dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box text-center">
+    <h3 className="font-bold text-xl">Thank You! </h3>
+    
+    <p className="py-4 text-gray-600">
+      Thanks for using <span className="font-semibold">Resumify</span>.<br />
+      Your download will begin shortly. 
+    </p>
+
+    <div className="modal-action justify-center">
+      <form method="dialog">
+        <button className="btn btn-primary">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </div>
   </div>
 
