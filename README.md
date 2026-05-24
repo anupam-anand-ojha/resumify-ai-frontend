@@ -1,46 +1,96 @@
-# Resumify AI - Frontend
+# Resumify AI
 
-Resumify AI is a React-based frontend application for generating professional, ATS-friendly resumes using AI. It provides a clean, responsive interface where users can enter their details and instantly get a formatted resume.
-
-## Tech Stack
-
-* React (Vite)
-* Tailwind CSS v4
-* DaisyUI
-* React Router DOM
-* Axios
+Resumify AI is a modern AI-powered resume builder built with React and Vite. It helps users create professional, clean, and ATS-friendly resumes through a simple and responsive interface. The project focuses on delivering a smooth user experience with fast performance, beautiful UI design, and AI-generated resume formatting.
 
 ## Features
 
-* Video background hero section
-* Simple resume input form
-* AI-generated resume output
-* Responsive UI
-* Client-side routing
+- AI-generated professional resumes
+- ATS-friendly resume formatting
+- Modern hero section with video background
+- Simple and responsive UI
+- Fast frontend powered by Vite
+- Client-side routing using React Router DOM
+- Beautiful styling with Tailwind CSS v4 and DaisyUI
+- API integration using Axios
 
-## Getting Started
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS v4
+- DaisyUI
+- React Router DOM
+- Axios
+
+## Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/resumify-ai-frontend.git
-cd resumify-ai-frontend
+git clone https://github.com/your-username/resumify-ai.git
+```
+
+Move into the project folder:
+
+```bash
+cd resumify-ai
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
 ```
 
-## Backend
+## Background Video
 
-Make sure the backend server is running on:
-http://localhost:3000
+Place your background video inside the public folder:
 
-API used:
-POST /api/generate-resume
+```bash
+public/video.mp4
+```
 
-## Notes
+## API Configuration
 
-* Place background video in public/video.mp4
-* Update API URL if backend runs on a different port
+If your backend runs on a different port or domain, update the Axios base URL configuration.
+
+Example:
+
+```js
+const API = axios.create({
+  baseURL: "http://localhost:3000"
+})
+```
+
+## Project Structure
+
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── routes/
+ ├── api/
+ └── App.jsx
+```
+
+## Future Improvements
+
+- Resume download as PDF
+- Multiple resume templates
+- Authentication system
+- Resume history saving
+- Dark/Light mode toggle
+- AI suggestions for skills and summaries
 
 ## Author
 
 Anand Anupam
 
+## License
+
+This project is licensed under the MIT License.
