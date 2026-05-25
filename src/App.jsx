@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import Hero from './components/Hero'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ResumeForm from './components/ResumeForm'
+import Use from './components/use'
 
 function Home(){
   return(
@@ -19,6 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/resume' element={<ResumeForm/>}/>
+      <Route path='/use' element={<Use/>}/>
      
     </Routes>
     </BrowserRouter>
