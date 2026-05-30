@@ -1,52 +1,70 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-
 function Use() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
   return (
-    <div class="hero  min-h-screen">
-  <div class="hero-content text-center">
-    <div class="max-w-2xl">
-      
-      <h1 class=" glass text-5xl font-bold">
-        How to Use Resumify AI
-      </h1>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6">
 
-      <p class=" glass py-6 text-lg">
-        Create a professional ATS-friendly resume in just a few simple steps.
-        Enter your details, choose your skills and experience, then let
-        Resumify AI generate a clean and modern resume instantly.
-      </p>
+      <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8 max-w-3xl w-full">
 
-      <div class="flex flex-col gap-4 text-left bg-base-100 p-6 rounded-2xl shadow-lg">
-        
-        <div>
-          <h2 class=" glass font-bold text-xl">1. Enter Your Details</h2>
-          <p>Add your personal information, education, skills, and work experience.</p>
+        <div className="text-center">
+          <h1 className="text-5xl font-bold text-white mb-6">
+            How to Use Resumify AI
+          </h1>
+
+          <p className="text-lg text-gray-200 mb-8">
+            Create a professional ATS-friendly resume in just a few simple
+            steps. Enter your details, choose your skills and experience, then
+            let Resumify AI generate a clean and modern resume instantly.
+          </p>
         </div>
 
-        <div>
-          <h2 class=" glass font-bold text-xl">2. Generate Resume</h2>
-          <p>Our AI instantly creates a professional and ATS-friendly resume layout.</p>
+        <div className="space-y-4">
+          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4">
+            <h2 className="font-bold text-xl text-white">
+              1. Enter Your Details
+            </h2>
+            <p className="text-gray-200">
+              Add your personal information, education, skills, and work
+              experience.
+            </p>
+          </div>
+
+          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4">
+            <h2 className="font-bold text-xl text-white">
+              2. Generate Resume
+            </h2>
+            <p className="text-gray-200">
+              Our AI instantly creates a professional and ATS-friendly resume
+              layout.
+            </p>
+          </div>
+
+          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4">
+            <h2 className="font-bold text-xl text-white">
+              3. Preview & Download
+            </h2>
+            <p className="text-gray-200">
+              Preview your resume in real-time and download it as a ready-to-use
+              PDF.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h2 class=" glass font-bold text-xl">3. Preview & Download</h2>
-          <p>Preview your resume in real-time and download it as a ready-to-use PDF.</p>
+        <div className="text-center">
+          <button
+            onClick={() => navigate("/resume")}
+            className="btn btn-primary mt-8"
+          >
+            Get Started
+          </button>
         </div>
 
       </div>
-
-      <button onClick={ () => { navigate('/resume')}} class="btn btn-primary mt-8">
-        Get Started
-      </button>
-
     </div>
-  </div>
-</div>
-  )
+  );
 }
 
-export default Use
+export default Use;
