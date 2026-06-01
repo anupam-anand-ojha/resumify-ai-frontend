@@ -28,12 +28,12 @@ function Hero() {
     <div className="max-w-md">
       <h1 className="mb-5 text-2xl font-bold">
        <span>
-  Build Your Resume With
+   Land More Interviews With
   <span className="text-rotate">
     <span>
-      <span className="bg-teal-400 text-teal-800 px-2">REUMIFY</span>
-      <span className="bg-red-400 text-red-800 px-2">POWERFUL AI</span>
-      {/* <span className="bg-blue-400 text-blue-800 px-2">Managers</span> */}
+      <span className="bg-teal-400 text-teal-800 px-2"> RESUMIFY AI</span>
+      <span className="bg-red-400 text-red-800 px-2">INTELLIGENT RESUME BUILDING</span>
+      <span className="bg-blue-400 text-blue-800 px-2">AI-POWERED WRITING</span>
     </span>
   </span>
 </span>
