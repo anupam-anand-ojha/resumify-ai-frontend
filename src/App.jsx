@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ResumeForm from './components/ResumeForm'
-import Use from './components/use'
+import Use from './components/Use'
 
 function Home(){
   return(
