@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
-    "axios": "^1.16.0",
+    "axios": "^1.16.1",
     "daisyui": "^5.5.19",
     "dom": "^0.0.3",
     "html2pdf.js": "^0.14.0",
