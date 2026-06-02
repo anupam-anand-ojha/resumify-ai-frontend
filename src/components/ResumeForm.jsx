@@ -111,12 +111,12 @@ const ResumeForm = () => {
         </div>
 
         {/* OUTPUT */}
-        <div className="relative z-10 card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 text-white">
+        <div className="relative z-10 card bg-black/30 backdrop-blur-md border border-white/10 shadow-xl p-6 text-white ">
           <h2 className="text-xl font-bold mb-4">Generated Resume</h2>
 
           <div
             id="resume-content"
-           className="prose max-w-none bg-white text-black p-8 rounded-lg shadow-lg overflow-y-auto"
+           className="prose max-w-none bg-white text-black p-8 rounded-lg shadow-lg max-h-[60vh] overflow-y-auto"
           >
            <ReactMarkdown>{resume || "Your AI-generated resume will appear here..."}</ReactMarkdown> 
           </div>
