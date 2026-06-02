@@ -28,10 +28,13 @@ const ResumeForm = () => {
       );
       setResume(res.data.resume);
     } catch (err) {
-      alert("Error generating resume");
-    } finally {
-      setLoading(false);
-    }
+    console.log("FULL ERROR:", err);
+    console.log("RESPONSE:", err.response?.data);
+
+    alert(err.response?.data?.message || "Error generating resume");
+  } finally {
+    setLoading(false);
+  }
   };
 
   // Download PDF
