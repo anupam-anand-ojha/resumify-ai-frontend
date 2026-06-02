@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import html2pdf from "html2pdf.js";
+import ReactMarkdown from "react-markdown";
 
 const ResumeForm = () => {
   const [formData, setFormData] = useState({
@@ -117,7 +118,7 @@ const ResumeForm = () => {
             id="resume-content"
             className="whitespace-pre-wrap text-sm bg-white text-black p-4 rounded"
           >
-            {resume || "Your AI-generated resume will appear here..."}
+           <ReactMarkdown>{resume || "Your AI-generated resume will appear here..."}</ReactMarkdown> 
           </div>
 
           {/* Download Button */}
