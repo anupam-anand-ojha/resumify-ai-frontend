@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import API from "../../API/axios";
 import html2pdf from "html2pdf.js";
 import ReactMarkdown from "react-markdown";
 
@@ -23,8 +23,8 @@ const ResumeForm = () => {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      const res = await axios.post(
-        "http://localhost:3000/api/generate-resume",
+      const res = await API.post(
+        "/api/generate-resume",
         formData
       );
       setResume(res.data.resume);
