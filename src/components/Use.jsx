@@ -5,7 +5,7 @@ function Use() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-red-900 to-slate-900 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-[radial-gradient(circle_at_30%_35%,rgba(170,107,194,0.12),transparent_35%),radial-gradient(circle_at_70%_65%,rgba(216,137,56,0.15),transparent_40%),linear-gradient(135deg,#050505,#120908,#2b0d08,#160a09,#050505)] p-6">
 
       <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8 max-w-3xl w-full">
 
