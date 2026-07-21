@@ -20,7 +20,7 @@ function Hero() {
 
   </video>
 
-   <div className="absolute inset-0 bg-black/40 z-0"></div>
+   <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-[#120908]/35 to-black/55 z-10"></div>
 
   <div className="hero-overlay"></div>
 

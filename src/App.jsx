@@ -8,6 +8,7 @@ import Use from './components/Use'
 function Home(){
   return(
 <>
+
 <Hero/>
 
 </>

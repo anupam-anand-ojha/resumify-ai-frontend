@@ -1,3 +1,29 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
 @plugin "@tailwindcss/typography"; 
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+ radial-gradient(circle at 30% 35%,
+      rgba(170, 107, 194, 0.12),
+      transparent 35%),
+    radial-gradient(circle at 70% 65%,
+      rgba(216, 137, 56, 0.15),
+      transparent 40%),
+    linear-gradient(
+      135deg,
+      #050505,
+      #120908,
+      #2b0d08,
+      #160a09,
+      #050505
+    );
+
+  background-color: #050505;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
