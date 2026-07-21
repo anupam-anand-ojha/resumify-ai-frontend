@@ -13,7 +13,7 @@ function Hero() {
     loop
     muted
     playsInline
-    className="absolute w-full h-full object-cover"
+    className="absolute w-full h-full object-cover z-0"
   >
     <source src="/video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
@@ -22,9 +22,9 @@ function Hero() {
 
    <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-[#120908]/35 to-black/55 z-10"></div>
 
-  <div className="hero-overlay"></div>
+  
 
-  <div className="hero-content text-neutral-content text-center">
+  <div className="hero-content relative z-20 text-neutral-content text-center">
     <div className="max-w-3xl">
       <h1 className="mb-5 text-2xl font-bold">
        <span>
