@@ -4,11 +4,12 @@ import Hero from './components/Hero'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ResumeForm from './components/ResumeForm'
 import Use from './components/Use'
+import Background from './components/Background'
 
 function Home(){
   return(
 <>
-
+<Background/>
 <Hero/>
 
 </>
