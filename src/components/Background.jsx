@@ -8,6 +8,7 @@ function Background() {
         loop
         muted
         playsInline
+        preload="auto"
         className="fixed inset-0 w-full h-full object-cover z-0 blur-sm "
       >
         <source src="/video.mp4" type="video/mp4" />
