@@ -61,17 +61,6 @@ const ResumeForm = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       
-      {/* Video Background */}
-      {/* <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="/video.mp4" type="video/mp4" />
-      </video> */}
-
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       
       <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 mt-20 relative">
