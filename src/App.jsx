@@ -9,7 +9,7 @@ import Background from './components/Background'
 function Home(){
   return(
 <>
-<Background/>
+
 <Hero/>
 
 </>
@@ -19,6 +19,7 @@ function App() {
    
     <BrowserRouter>
     <Navbar/>
+    <Background/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/resume' element={<ResumeForm/>}/>
